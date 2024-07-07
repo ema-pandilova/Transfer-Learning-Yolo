@@ -11,9 +11,18 @@ Object detection in remote sensing is a challenging task due to the varied and c
 ## Datasets
 The project utilizes the following datasets:
 
-- **DIOR (Dataset for Object Detection in Aerial Images)**: DIOR is a large-scale dataset designed for object detection in aerial images. It includes images from different geographic locations and diverse environmental conditions, covering 20 object categories. This dataset is particularly challenging due to the high variability in object appearance, size, and orientation.
-- **COCO (Common Objects in Context)**: COCO is a widely-used dataset in the computer vision community, featuring over 200,000 labeled images with 80 object categories. It is commonly used for pre-training object detection models due to its large scale and diverse set of objects.
-- **Ships Dataset**: This is a custom dataset containing images of ships, curated to test the models' ability to generalize to specific object detection tasks outside the DIOR and COCO datasets. It includes various types of ships in different environments and from multiple angles.
+### DIOR (Dataset for Object Detection in Aerial Images):
+  - 20 different classes, ranging from tiny to large-scale objects.
+  - 23,463 high-quality images (800 x 800 px) originally split into 50% training and 50% test sets. The images are randomly shuffled.
+  - the original annotations are in Pascal VOC format and have been converted to YOLO format for compatibility with the YOLOv8 model.
+  - the original splits are available via the following links:
+      
+    - Train/Val Split: Google Drive Link[Google Drive Link](https://drive.google.com/uc?id=1ZHbHDM6hYAEGDC_K5eiW0yF_lzVgpuir)
+    - Test Split: [Google Drive Link](https://drive.google.com/uc?id=11SXPqcESez9qTn4Z5Q3v35K9hRwO_epr)
+### Ships Dataset: 
+- contains images of various types of ships in different environments and from multiple angles.
+- images are split into training, validation, and test sets to ensure balanced representation and effective model evaluation.
+- the splits are available on Kaggle: [Kaggle link](https://www.kaggle.com/datasets/siddharthkumarsah/ships-in-aerial-images)
 ## Notebooks
 The following Jupyter notebooks are included in this repository to guide you through the experiments:
 

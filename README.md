@@ -26,6 +26,15 @@ The project utilizes the following datasets:
 - contains images of various types of ships in different environments and from multiple angles.
 - images are split into training, validation, and test sets to ensure balanced representation and effective model evaluation.
 - the splits are available on Kaggle: [Kaggle link](https://www.kaggle.com/datasets/siddharthkumarsah/ships-in-aerial-images)
+
+## Models
+For simple reproduction, we provide the used models int the `models` folder. These files are saved after various epochs and contain the weights of the models:
+- `coco-dior-ships-29epochs-best.pt` - Best model after 29 epochs, fine-tuned on COCO, DIOR, and ships dataset.
+- `yolo-coco-dior-93epochs-best.pt` - Best model after 93 epochs, fine-tuned on COCO and DIOR datasets.
+- `yolo-coco-dior-best.pt` - Best overall model fine-tuned on COCO and DIOR datasets.
+- `yolo-coco-dior-ships-93epochs-best.pt` - Best model after 93 epochs, fine-tuned on COCO, DIOR, and ships dataset.
+- `yolo-coco-ships-71epochs-best.pt` - Best model after 71 epochs, fine-tuned on COCO and ships dataset.
+- `yolo-coco-ships-96epochs-best.pt` - Best model after 96 epochs, fine-tuned on COCO and ships dataset.
 ## Notebooks
 The following Jupyter notebooks are included in this repository to guide you through the experiments:
 

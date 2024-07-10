@@ -73,7 +73,7 @@ The results from the experiments conducted in the notebooks include detailed com
 | Pre-Trained on COCO           | 0.726         | 0.407      | 0.573 | 0.364    |
 
 These results highlight the following observations:
-- **Training from Scratch vs. Transfer Learning on DIOR**: The YOLOv8 model pre-trained on COCO and fine-tuned on the DIOR dataset outperformed the model trained from scratch in all metrics.
-- **Generalization to New Datasets (Ships)**: The model pre-trained on both COCO and DIOR datasets demonstrated better generalization capabilities on the ships dataset compared to the model pre-trained only on COCO.
+- The YOLOv8 model pre-trained on COCO and fine-tuned on the DIOR dataset outperformed the model trained from scratch in all metrics.
+- The model pre-trained on both COCO and DIOR datasets demonstrated better generalization capabilities on the ships dataset compared to the model pre-trained only on COCO.
 
 

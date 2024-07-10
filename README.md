@@ -54,3 +54,26 @@ Evaluate a YOLOv8 model pre-trained on COCO and fine-tuned on the DIOR dataset u
 
 Fine-tune a YOLOv8 model pre-trained on both COCO and DIOR datasets specifically on the ships dataset.
 
+## Results
+
+The results from the experiments conducted in the notebooks include detailed comparisons of model performance, specifically focusing on precision, recall, and mean Average Precision (mAP) metrics. The tables below summarize the comparative performance of YOLOv8 models fine-tuned on the DIOR dataset and the ships dataset.
+
+### Comparative Performance of YOLOv8 Models Fine-Tuned on DIOR Dataset
+
+| Model                | Precision (P) | Recall (R) | mAP50 | mAP50-95 |
+|----------------------|---------------|------------|-------|----------|
+| From Scratch         | 0.819         | 0.636      | 0.714 | 0.486    |
+| Pre-Trained on COCO  | 0.848         | 0.685      | 0.760 | 0.532    |
+
+### Comparative Performance of YOLOv8 Models Fine-Tuned on Ships Dataset
+
+| Model                         | Precision (P) | Recall (R) | mAP50 | mAP50-95 |
+|-------------------------------|---------------|------------|-------|----------|
+| Pre-Trained on COCO + DIOR    | 0.692         | 0.468      | 0.592 | 0.384    |
+| Pre-Trained on COCO           | 0.726         | 0.407      | 0.573 | 0.364    |
+
+These results highlight the following observations:
+- **Training from Scratch vs. Transfer Learning on DIOR**: The YOLOv8 model pre-trained on COCO and fine-tuned on the DIOR dataset outperformed the model trained from scratch in all metrics.
+- **Generalization to New Datasets (Ships)**: The model pre-trained on both COCO and DIOR datasets demonstrated better generalization capabilities on the ships dataset compared to the model pre-trained only on COCO.
+
+
